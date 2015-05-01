@@ -93,7 +93,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 10,
-        motd: "Welcome to BoL's Plug.DJ!",
+        motd: "Welcome to BoL's Plug.DJ! - BoL Status // http://bol-tracker.web-worx.ws/",
         filterChat: true,
         etaRestriction: false,
         welcome: false,
