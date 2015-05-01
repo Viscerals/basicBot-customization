@@ -55,15 +55,15 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "ValericaBot",
         language: "english",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Viscerals/basicBot/master/lang/en.json",
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         blacklistEnabled: true,
@@ -72,8 +72,8 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkip: true,
+        voteSkipLimit: 8,
         timeGuard: true,
         maximumSongLength: 10,
         autodisable: true,
@@ -91,18 +91,18 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: true,
+        motdInterval: 10,
+        motd: "Welcome to BoL's Plug.DJ!",
         filterChat: true,
         etaRestriction: false,
-        welcome: true,
+        welcome: false,
         opLink: null,
-        rulesLink: null,
+        rulesLink: "http://forum.botoflegends.com/forum-44/announcement-23-forum-rules-read-before-posting/",
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: "http://forum.botoflegends.com/",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
@@ -114,6 +114,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Viscerals/basicBot/master/basicBot.js", extend);
 
 }).call(this);
